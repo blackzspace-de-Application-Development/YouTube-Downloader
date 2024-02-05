@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/cr0nic41zx/Development/Projects-Index/Projects - Index/blackzspace.de-Development/@_Development/@Application -  Development/YouTube-Downloader/YouTube-Downloader/__data__/__ui__/mainui/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
